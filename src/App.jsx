@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -12,7 +12,7 @@ import "./App.css";
 
 export default function App() {
   return (
-    <Router>
+    <>
       <ScrollToTop />
       <Navbar />
       <Routes>
@@ -22,7 +22,6 @@ export default function App() {
         <Route path="/project/defect-tracking" element={<DetailProject3 />} />
       </Routes>
       <Footer />
-    </Router>
+    </>
   );
 }
-

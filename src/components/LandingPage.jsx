@@ -36,7 +36,7 @@ export default function LandingPage() {
           <div className="button-row">
             <a href="#projects" className="btn btn-primary">Projects</a>
             <a
-              href="https://drive.google.com/uc?export=download&id=1ABC2D3EF4GhIJKl"
+              href="https://drive.google.com/file/d/1rplZzxMqlxtrSEzL23sCQf0aIZjfUUPH/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-secondary"
