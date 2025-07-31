@@ -1,0 +1,10 @@
+.aboutMe {
+  text-align: center;
+}
+
+.aboutMe-text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: justify;
+}

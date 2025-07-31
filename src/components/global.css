@@ -1,0 +1,179 @@
+/* components.css */
+body, html {
+  font-family: "Montserrat-Regular", Helvetica, sans-serif;
+  color: white;
+}
+
+.section-container {
+  margin: 0 auto;
+  background-color: rgba(42, 42, 42, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(126, 166, 16, 0.4);
+  padding: 50px 60px;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* biar ikut parent */
+  max-width: 100%;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border: 2px solid rgba(126, 166, 16, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.section-subtitle-xl {
+  text-align: center;
+  font-family: "Montserrat-Regular", Helvetica;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  padding: 16px 32px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Montserrat-Regular", Helvetica;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #7ea610;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #444;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+
+.card:hover {
+  box-shadow: 0 6px 14px rgba(126, 166, 16, 0.4);
+}
+
+.section-title {
+  text-align: center;
+  font-family: 'Montserrat-Bold', Helvetica;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-family: "Montserrat-Regular", Helvetica;
+  font-size: 16px;
+  margin-bottom: 70px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 40px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 40px;
+}
+
+.project-title {
+  font-size: 18px;
+  text-align: center;
+  font-family: "Montserrat-Bold", Helvetica;
+  margin-bottom: 10px;
+}
+
+.project-detail {
+  font-size: 15px;
+  text-align: justify;
+}
+
+.badge {
+  height: 30px;
+  padding: 0 12px;
+  background-color: #6B7848;
+  color: #ffffff;
+  border-radius: 30px;
+  font-size: 13px;
+  line-height: 30px;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  display: inline-block;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.skill-title {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Montserrat-Bold', Helvetica;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-list li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 6px;
+  font-size: 15px;
+  font-family: "Montserrat-Regular", Helvetica;
+  color: white;
+}
+
+
+
+.w-70 {
+  width: 70%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.text-justify {
+  text-align: justify;
+}

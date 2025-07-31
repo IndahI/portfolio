@@ -1,0 +1,41 @@
+.navbar {
+  width: 100%;
+  background-color: #2a2a2a;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Ubah ini agar tidak bentrok dengan .container lain di App.css */
+.navbar-content {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Pastikan bagian kanan navbar (link/tombol) tersusun rapi */
+.navbar-content .right {
+  display: flex;
+  gap: 20px;
+}
+
+.navbarDetail {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.navbarDetail:hover {
+  text-decoration: underline;
+}

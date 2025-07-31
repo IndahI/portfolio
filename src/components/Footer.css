@@ -1,0 +1,29 @@
+.footer {
+  width: 100%;
+  background-color: #2a2a2a;
+  padding: 20px 0px;
+}
+
+.container {
+  max-width: 95%;
+  margin: 0 auto;         /* Ini membuat kontennya tetap di tengah */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content .left {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.footer-content .right {
+  display: flex;
+  gap: 20px;
+}
+
+.icons-group .icon {
+  width: 24px;
+  height: 24px;
+}
