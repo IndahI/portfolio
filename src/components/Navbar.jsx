@@ -1,4 +1,5 @@
 import "./Navbar.css";
+import logo from "../assets/logo.svg";
 import { useNavigate, useLocation } from "react-router-dom";
 
 export default function Navbar() {
@@ -21,7 +22,11 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <div className="container navbar-content">
-        <div className="left"></div>
+        <div className="left">
+          <button className="logo-button" onClick={() => handleNavClick("landing")}>
+            <img src={logo} alt="Logo" className="navbar-logo" />
+          </button>
+        </div>
         <div className="right">
           <button onClick={() => handleNavClick("about")} className="navbarDetail">About</button>
           <button onClick={() => handleNavClick("skill")} className="navbarDetail">Skill</button>

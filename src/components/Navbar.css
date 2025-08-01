@@ -26,7 +26,7 @@
 .navbarDetail {
   color: #ffffff;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 17px;
   letter-spacing: 0;
   line-height: normal;
   background: none;
@@ -38,4 +38,21 @@
 
 .navbarDetail:hover {
   text-decoration: underline;
+}
+
+.logo-button {
+  background: none;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 8px; /* atau ubah sesuai ukuran ikon */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-logo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
 }
