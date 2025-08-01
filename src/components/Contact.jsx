@@ -1,5 +1,4 @@
 import './Contact.css';
-import './global.css';
 import emailjs from 'emailjs-com';
 import { useState } from 'react';
 
