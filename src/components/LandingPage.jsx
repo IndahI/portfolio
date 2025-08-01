@@ -1,30 +1,43 @@
-import "./LandingPage.css";
+import { useEffect, useRef, useState } from "react";
+import { FaChevronDown } from "react-icons/fa";
 import { MdiGithub } from "../icon/MdiGithub";
 import { MdiLinkedin } from "../icon/MdiLinkedin";
+import "./LandingPage.css";
 
 export default function LandingPage() {
+  const landingRef = useRef(null);
+  const [inView, setInView] = useState(true);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => setInView(entry.isIntersecting),
+      { threshold: 0.3 }
+    );
+
+    if (landingRef.current) observer.observe(landingRef.current);
+    return () => observer.disconnect();
+  }, []);
+
+  const scrollToProjects = () => {
+    const target = document.getElementById("about");
+    if (target) target.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <>
-      <div className="floating-icons">
-        <a
-          href="https://github.com/IndahI"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="GitHub"
-        >
-          <MdiGithub />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/indah-ibtisyah-kharomi"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-        >
-          <MdiLinkedin />
-        </a>
-      </div>
+      {/* === Floating Icons (opsional: tetap ditampilkan atau ikut inView) === */}
+      {inView && (
+        <div className="floating-icons">
+          <a href="https://github.com/IndahI" target="_blank" rel="noopener noreferrer">
+            <MdiGithub />
+          </a>
+          <a href="https://www.linkedin.com/in/indah-ibtisyah-kharomi" target="_blank" rel="noopener noreferrer">
+            <MdiLinkedin />
+          </a>
+        </div>
+      )}
 
-      <div className="box">
+      {/* === Konten utama Landing Page === */}
+      <div ref={landingRef} className="box">
         <div className="section-container">
           <p className="section-title">Hi! I’m Indah Ibtisyah Kharomi</p>
           <p className="section-subtitle-xl">
@@ -44,6 +57,13 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
+
+      {/* === Scroll Down Button, hanya saat landing masih terlihat === */}
+      {inView && (
+        <div className="scroll-down" onClick={scrollToProjects}>
+          <FaChevronDown className="scroll-icon" />
+        </div>
+      )}
     </>
   );
 }
