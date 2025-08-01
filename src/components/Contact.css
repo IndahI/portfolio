@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px 0; /* Tambahan supaya ada jarak */
 }
 
 /* Jangan batasi lebar di container luar */
@@ -23,3 +22,40 @@
   margin: 10px auto;
 }
 
+/* Input & Textarea Styling */
+.input,
+.textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background-color: #f9f9f9;
+  color: #333;
+  box-sizing: border-box;
+}
+
+/* Tambahan untuk textarea */
+.textarea {
+  resize: vertical;
+}
+
+/* Tombol kirim */
+.btn-submit {
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 6px;
+  font-family: "Montserrat-Regular", Helvetica;
+  background-color: #7ea610;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.btn-submit:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

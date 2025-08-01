@@ -20,10 +20,21 @@
 
 .footer-content .right {
   display: flex;
+  flex-direction: row;
   gap: 20px;
+  align-items: center;
 }
 
-.icons-group .icon {
-  width: 24px;
-  height: 24px;
+.footer-content .right a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer-content .right a:hover {
+  color: #7ea610;
+}
+
+.footer-content .right a svg {
+  width: 30px;
+  height: 30px;
 }

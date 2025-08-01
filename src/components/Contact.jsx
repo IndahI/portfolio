@@ -1,10 +1,10 @@
 import './Contact.css';
+import './global.css';
 import emailjs from 'emailjs-com';
 import { useState } from 'react';
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
-
   const isFormValid = form.name && form.email && form.message;
 
   const handleChange = (e) => {
@@ -43,7 +43,7 @@ export default function Contact() {
   return (
     <section className="section contact">
       <div className="section-container contact-container">
-        <div className="contact-title">LET’S BUILD TOGETHER</div>
+        <h2 className="section-title contact-title">LET’S BUILD TOGETHER</h2>
 
         <input
           type="text"
@@ -67,12 +67,13 @@ export default function Contact() {
           name="message"
           placeholder="Your Message"
           className="textarea"
+          rows="6"
           value={form.message}
           onChange={handleChange}
         ></textarea>
 
         <button
-          className="btn-submit"
+          className="btn btn-primary btn-submit"
           onClick={handleSend}
           disabled={!isFormValid}
         >

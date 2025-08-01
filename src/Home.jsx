@@ -13,13 +13,12 @@ export default function Home() {
     const scrollId = location.state?.scrollToId;
 
     if (scrollId) {
-      // Delay scroll untuk memastikan elemen sudah dirender
       setTimeout(() => {
         const element = document.getElementById(scrollId);
         if (element) {
           element.scrollIntoView({ behavior: "smooth" });
         }
-      }, 100); // 100-200ms bisa disesuaikan jika perlu
+      }, 100); 
     }
   }, [location]);
 

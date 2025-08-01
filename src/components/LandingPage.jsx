@@ -5,7 +5,6 @@ import { MdiLinkedin } from "../icon/MdiLinkedin";
 export default function LandingPage() {
   return (
     <>
-      {/* === Kotak ikon fix di sisi kiri layar === */}
       <div className="floating-icons">
         <a
           href="https://github.com/IndahI"
@@ -25,7 +24,6 @@ export default function LandingPage() {
         </a>
       </div>
 
-      {/* === Konten utama landing page === */}
       <div className="box">
         <div className="section-container">
           <p className="section-title">Hi! I’m Indah Ibtisyah Kharomi</p>

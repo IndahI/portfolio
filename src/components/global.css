@@ -103,7 +103,11 @@ body, html {
 .project-detail {
   font-size: 15px;
   text-align: justify;
+  line-height: 1.6;
+  width: 100%;          /* isi seluruh ruang parent */
+  margin: 0 auto;       /* tengah jika perlu */
 }
+
 
 .badge {
   height: 30px;
@@ -152,7 +156,9 @@ body, html {
   color: white;
 }
 
-
+.project-card{
+  min-height: 340px;
+}
 
 .w-70 {
   width: 70%;
