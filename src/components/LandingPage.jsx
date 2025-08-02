@@ -24,7 +24,6 @@ export default function LandingPage() {
   };
   return (
     <>
-      {/* === Floating Icons (opsional: tetap ditampilkan atau ikut inView) === */}
       {inView && (
         <div className="floating-icons">
           <a href="https://github.com/IndahI" target="_blank" rel="noopener noreferrer">
@@ -36,7 +35,6 @@ export default function LandingPage() {
         </div>
       )}
 
-      {/* === Konten utama Landing Page === */}
       <div ref={landingRef} className="box">
         <div className="section-container">
           <p className="section-title">Hi! I’m Indah Ibtisyah Kharomi</p>
@@ -47,7 +45,7 @@ export default function LandingPage() {
           <div className="button-row">
             <a href="#projects" className="btn btn-primary">Projects</a>
             <a
-              href="https://drive.google.com/file/d/1rplZzxMqlxtrSEzL23sCQf0aIZjfUUPH/view?usp=sharing"
+              href="https://drive.google.com/file/d/1inCMEdzex5eMSdxRe33GQYnDoTi_T-yH/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-secondary"
